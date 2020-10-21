@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Handyman Fix: A better way to tackle projects</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/handymanlogo.png" class="img-fluid" alt="logo" />
+                </div>
+                <div class="col">
+                    <h1>Handyman Fix</h1>
+                    <h2>a better way to tackle projects</h2>
+                </div>
+
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a href="#quoterequestform" role="button" class="btn btn-lg btn-primary">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/handymanlogo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#handymanfixNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="handymanfixNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>
+                            About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i
+                                class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <h2 class="text-sm-right">All Projects</h2>
+            </div>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/tools-200.jpg" alt="Tools" />
+                    <div class="media-body align-self-center">
+                        <h3>Whole Project Completion</h3>
+                        <p class="d-none d-sm-block">We can do both exterior and interior projects!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3">
+                <h2>Indoor Jobs</h2>
+            </div>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>Interior Handyman Jobs</h3>
+                        <p class="d-none d-sm-block">Anything inside the house we can fix up for you no problem.
+                            Wheteher you need to frame walls in your basement, or if you need to fix the plumbing issue
+                            you have with your bathroom. We got you covered from A-Z with interior projects.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/electrical-hm-200.jpg" alt="React Lake" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <h2 class="text-sm-right">Outdoor Jobs</h2>
+            </div>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/painting-fence-200.jpg" alt="Outdoor Services" />
+                    <div class="media-body align-self-center">
+                        <h3>Exterior Handyman Services</h3>
+                        <p class="d-none d-sm-block">We provide exterior services such as: Landscaping, Painting,
+                            Fencing, Windows Installation etc. What ever your current needs are in your outdoor project.
+                            We will finish for you. We can meet a deadline when it needs priority service as well.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Request a Quote</h3>
+                    <div class="card-body">
+                        <form id="quoterequestform">
+
+                            <!-- Date -->
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label">Date for Expected Project
+                                    Start</label>
+                                <div class="col">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="services" class="col-sm-6 col-form-label">Service To Be Provided</label>
+                                <div class="col">
+                                    <select name="quoterequestform" id="quoterequestform" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">Framing Walls</option>
+                                        <option value="2">Plumbing</option>
+                                        <option value="3">Bathroom</option>
+                                        <option value="4">Kitchen</option>
+                                        <option value="5">Flooring</option>
+                                        <option value="6">Painting</option>
+                                        <option value="7">Electrical</option>
+                                        <option value="8">Decks</option>
+                                        <option value="9">Water Line Blowout</option>
+                                        <option value="10">Landscaping</option>
+                                        <option value="11">Finish Basement</option>
+                                        <option value="12">Install Wood Floors</option>
+                                        <option value="13">Install Ceiling Fan</option>
+                                        <option value="14">Other: Use Additional Notes Below</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row addnotes">
+                                <label class=" col-6 col-form-label" for="formGroupaddtionalnotes">Additional Notes for
+                                    Project</label>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="formGroupaddtionalnotes"
+                                        placeholder="additional notes">
+                                </div>
+                            </div>
+                            <div class="form-group row addnotes">
+                                <label class=" col-6 col-form-label" for="formGroupbudget">Estimated Budget for
+                                    Project</label>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="formGroupbudget" placeholder="budget">
+                                </div>
+                            </div>
+
+                            <!-- Search Button -->
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-left">
+                    <a role="button" class="btn btn-link" href="tel:+17196789012"><i class="fa fa-phone"></i>
+                        1-719-678-9012</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:contact@handymanfix.com"><i
+                            class="fa fa-envelope-o"></i> contact@handymanfix</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
