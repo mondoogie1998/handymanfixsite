@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Playfair+Display",;
+    font-family: "Dosis&display";
 }
 
 h2 {
@@ -11,18 +11,18 @@ h2 {
 }
 
 header h2 {
-    color: #CEC8FF;
+    color: white;
 }
 
 .site-footer {
-    background-color: lightskyblue;
+    background-color: rgb(221, 226, 221);
     padding: 20px 0;
 }
 
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-color:rgb(120, 167, 167);
+    background-color:#3b3733;
     color:white;
 }
 
@@ -33,9 +33,22 @@ header h2 {
 }
 
 .navbar {
-    background-color: #66a3ff;
+    background-color: hsl(138, 39%, 52%);
 }
 
-/* .form-group notes{
-    
-} */
+.jumboheaders {
+    color: #3046C5;
+}
+
+.carousel {
+    border: solid #5637dd; }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); }
+  
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100; }
+  
